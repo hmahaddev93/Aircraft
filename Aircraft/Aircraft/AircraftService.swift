@@ -36,7 +36,6 @@ final class AircraftService: AircraftService_Protocol {
             .decode(type: [Aircraft].self, decoder: self.jsonDecoder)
             .sink(receiveCompletion: { complete in
                 switch complete {
-                    
                 case .finished:
                     break
                 case .failure(let error):
