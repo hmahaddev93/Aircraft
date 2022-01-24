@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B4D639D279E43FB00BF8F15 /* AircraftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D639C279E43FB00BF8F15 /* AircraftApp.swift */; };
+		6B4D639F279E43FB00BF8F15 /* AircraftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D639E279E43FB00BF8F15 /* AircraftsView.swift */; };
+		6B4D63A1279E43FD00BF8F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4D63A0279E43FD00BF8F15 /* Assets.xcassets */; };
+		6B4D63A4279E43FD00BF8F15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4D63A3279E43FD00BF8F15 /* Preview Assets.xcassets */; };
+		6B4D63A6279E43FD00BF8F15 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D63A5279E43FD00BF8F15 /* Persistence.swift */; };
+		6B4D63A9279E43FD00BF8F15 /* Aircraft.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D63A7279E43FD00BF8F15 /* Aircraft.xcdatamodeld */; };
+		6B4D63B3279E43FD00BF8F15 /* AircraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D63B2279E43FD00BF8F15 /* AircraftTests.swift */; };
+		6B4D63BD279E43FD00BF8F15 /* AircraftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D63BC279E43FD00BF8F15 /* AircraftUITests.swift */; };
+		6B4D63BF279E43FD00BF8F15 /* AircraftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D63BE279E43FD00BF8F15 /* AircraftUITestsLaunchTests.swift */; };
+		6B4D63CD279E4B4C00BF8F15 /* Aircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D63CC279E4B4C00BF8F15 /* Aircraft.swift */; };
+		6B4D63CF279E4C4900BF8F15 /* AircraftService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D63CE279E4C4900BF8F15 /* AircraftService.swift */; };
+		6B4D63D2279E50BF00BF8F15 /* AircraftsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D63D1279E50BF00BF8F15 /* AircraftsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B4D63AF279E43FD00BF8F15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B4D6391279E43FB00BF8F15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B4D6398279E43FB00BF8F15;
+			remoteInfo = Aircraft;
+		};
+		6B4D63B9279E43FD00BF8F15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B4D6391279E43FB00BF8F15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B4D6398279E43FB00BF8F15;
+			remoteInfo = Aircraft;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B4D6399279E43FB00BF8F15 /* Aircraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aircraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4D639C279E43FB00BF8F15 /* AircraftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftApp.swift; sourceTree = "<group>"; };
+		6B4D639E279E43FB00BF8F15 /* AircraftsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftsView.swift; sourceTree = "<group>"; };
+		6B4D63A0279E43FD00BF8F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B4D63A3279E43FD00BF8F15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B4D63A5279E43FD00BF8F15 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		6B4D63A8279E43FD00BF8F15 /* Aircraft.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aircraft.xcdatamodel; sourceTree = "<group>"; };
+		6B4D63AE279E43FD00BF8F15 /* AircraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AircraftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4D63B2279E43FD00BF8F15 /* AircraftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftTests.swift; sourceTree = "<group>"; };
+		6B4D63B8279E43FD00BF8F15 /* AircraftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AircraftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4D63BC279E43FD00BF8F15 /* AircraftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftUITests.swift; sourceTree = "<group>"; };
+		6B4D63BE279E43FD00BF8F15 /* AircraftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6B4D63CC279E4B4C00BF8F15 /* Aircraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aircraft.swift; sourceTree = "<group>"; };
+		6B4D63CE279E4C4900BF8F15 /* AircraftService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftService.swift; sourceTree = "<group>"; };
+		6B4D63D1279E50BF00BF8F15 /* AircraftsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B4D6396279E43FB00BF8F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4D63AB279E43FD00BF8F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4D63B5279E43FD00BF8F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B4D6390279E43FB00BF8F15 = {
+			isa = PBXGroup;
+			children = (
+				6B4D639B279E43FB00BF8F15 /* Aircraft */,
+				6B4D63B1279E43FD00BF8F15 /* AircraftTests */,
+				6B4D63BB279E43FD00BF8F15 /* AircraftUITests */,
+				6B4D639A279E43FB00BF8F15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B4D639A279E43FB00BF8F15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B4D6399279E43FB00BF8F15 /* Aircraft.app */,
+				6B4D63AE279E43FD00BF8F15 /* AircraftTests.xctest */,
+				6B4D63B8279E43FD00BF8F15 /* AircraftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B4D639B279E43FB00BF8F15 /* Aircraft */ = {
+			isa = PBXGroup;
+			children = (
+				6B4D63CB279E445900BF8F15 /* Model */,
+				6B4D63CE279E4C4900BF8F15 /* AircraftService.swift */,
+				6B4D639C279E43FB00BF8F15 /* AircraftApp.swift */,
+				6B4D63D0279E508D00BF8F15 /* Aircrafts */,
+				6B4D63A0279E43FD00BF8F15 /* Assets.xcassets */,
+				6B4D63A5279E43FD00BF8F15 /* Persistence.swift */,
+				6B4D63A7279E43FD00BF8F15 /* Aircraft.xcdatamodeld */,
+				6B4D63A2279E43FD00BF8F15 /* Preview Content */,
+			);
+			path = Aircraft;
+			sourceTree = "<group>";
+		};
+		6B4D63A2279E43FD00BF8F15 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6B4D63A3279E43FD00BF8F15 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6B4D63B1279E43FD00BF8F15 /* AircraftTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B4D63B2279E43FD00BF8F15 /* AircraftTests.swift */,
+			);
+			path = AircraftTests;
+			sourceTree = "<group>";
+		};
+		6B4D63BB279E43FD00BF8F15 /* AircraftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6B4D63BC279E43FD00BF8F15 /* AircraftUITests.swift */,
+				6B4D63BE279E43FD00BF8F15 /* AircraftUITestsLaunchTests.swift */,
+			);
+			path = AircraftUITests;
+			sourceTree = "<group>";
+		};
+		6B4D63CB279E445900BF8F15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B4D63CC279E4B4C00BF8F15 /* Aircraft.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B4D63D0279E508D00BF8F15 /* Aircrafts */ = {
+			isa = PBXGroup;
+			children = (
+				6B4D639E279E43FB00BF8F15 /* AircraftsView.swift */,
+				6B4D63D1279E50BF00BF8F15 /* AircraftsViewModel.swift */,
+			);
+			path = Aircrafts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B4D6398279E43FB00BF8F15 /* Aircraft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B4D63C2279E43FD00BF8F15 /* Build configuration list for PBXNativeTarget "Aircraft" */;
+			buildPhases = (
+				6B4D6395279E43FB00BF8F15 /* Sources */,
+				6B4D6396279E43FB00BF8F15 /* Frameworks */,
+				6B4D6397279E43FB00BF8F15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aircraft;
+			productName = Aircraft;
+			productReference = 6B4D6399279E43FB00BF8F15 /* Aircraft.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B4D63AD279E43FD00BF8F15 /* AircraftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B4D63C5279E43FD00BF8F15 /* Build configuration list for PBXNativeTarget "AircraftTests" */;
+			buildPhases = (
+				6B4D63AA279E43FD00BF8F15 /* Sources */,
+				6B4D63AB279E43FD00BF8F15 /* Frameworks */,
+				6B4D63AC279E43FD00BF8F15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B4D63B0279E43FD00BF8F15 /* PBXTargetDependency */,
+			);
+			name = AircraftTests;
+			productName = AircraftTests;
+			productReference = 6B4D63AE279E43FD00BF8F15 /* AircraftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6B4D63B7279E43FD00BF8F15 /* AircraftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B4D63C8279E43FD00BF8F15 /* Build configuration list for PBXNativeTarget "AircraftUITests" */;
+			buildPhases = (
+				6B4D63B4279E43FD00BF8F15 /* Sources */,
+				6B4D63B5279E43FD00BF8F15 /* Frameworks */,
+				6B4D63B6279E43FD00BF8F15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B4D63BA279E43FD00BF8F15 /* PBXTargetDependency */,
+			);
+			name = AircraftUITests;
+			productName = AircraftUITests;
+			productReference = 6B4D63B8279E43FD00BF8F15 /* AircraftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B4D6391279E43FB00BF8F15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					6B4D6398279E43FB00BF8F15 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					6B4D63AD279E43FD00BF8F15 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6B4D6398279E43FB00BF8F15;
+					};
+					6B4D63B7279E43FD00BF8F15 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6B4D6398279E43FB00BF8F15;
+					};
+				};
+			};
+			buildConfigurationList = 6B4D6394279E43FB00BF8F15 /* Build configuration list for PBXProject "Aircraft" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B4D6390279E43FB00BF8F15;
+			productRefGroup = 6B4D639A279E43FB00BF8F15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B4D6398279E43FB00BF8F15 /* Aircraft */,
+				6B4D63AD279E43FD00BF8F15 /* AircraftTests */,
+				6B4D63B7279E43FD00BF8F15 /* AircraftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B4D6397279E43FB00BF8F15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4D63A4279E43FD00BF8F15 /* Preview Assets.xcassets in Resources */,
+				6B4D63A1279E43FD00BF8F15 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4D63AC279E43FD00BF8F15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4D63B6279E43FD00BF8F15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B4D6395279E43FB00BF8F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4D63A6279E43FD00BF8F15 /* Persistence.swift in Sources */,
+				6B4D63CF279E4C4900BF8F15 /* AircraftService.swift in Sources */,
+				6B4D63A9279E43FD00BF8F15 /* Aircraft.xcdatamodeld in Sources */,
+				6B4D63CD279E4B4C00BF8F15 /* Aircraft.swift in Sources */,
+				6B4D639F279E43FB00BF8F15 /* AircraftsView.swift in Sources */,
+				6B4D63D2279E50BF00BF8F15 /* AircraftsViewModel.swift in Sources */,
+				6B4D639D279E43FB00BF8F15 /* AircraftApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4D63AA279E43FD00BF8F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4D63B3279E43FD00BF8F15 /* AircraftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4D63B4279E43FD00BF8F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4D63BF279E43FD00BF8F15 /* AircraftUITestsLaunchTests.swift in Sources */,
+				6B4D63BD279E43FD00BF8F15 /* AircraftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B4D63B0279E43FD00BF8F15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B4D6398279E43FB00BF8F15 /* Aircraft */;
+			targetProxy = 6B4D63AF279E43FD00BF8F15 /* PBXContainerItemProxy */;
+		};
+		6B4D63BA279E43FD00BF8F15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B4D6398279E43FB00BF8F15 /* Aircraft */;
+			targetProxy = 6B4D63B9279E43FD00BF8F15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6B4D63C0279E43FD00BF8F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B4D63C1279E43FD00BF8F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B4D63C3279E43FD00BF8F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Aircraft/Preview Content\"";
+				DEVELOPMENT_TEAM = RD2277U49U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Aircraft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B4D63C4279E43FD00BF8F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Aircraft/Preview Content\"";
+				DEVELOPMENT_TEAM = RD2277U49U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Aircraft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B4D63C6279E43FD00BF8F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD2277U49U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AircraftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aircraft.app/Aircraft";
+			};
+			name = Debug;
+		};
+		6B4D63C7279E43FD00BF8F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD2277U49U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AircraftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aircraft.app/Aircraft";
+			};
+			name = Release;
+		};
+		6B4D63C9279E43FD00BF8F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD2277U49U;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AircraftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Aircraft;
+			};
+			name = Debug;
+		};
+		6B4D63CA279E43FD00BF8F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD2277U49U;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AircraftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Aircraft;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B4D6394279E43FB00BF8F15 /* Build configuration list for PBXProject "Aircraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4D63C0279E43FD00BF8F15 /* Debug */,
+				6B4D63C1279E43FD00BF8F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B4D63C2279E43FD00BF8F15 /* Build configuration list for PBXNativeTarget "Aircraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4D63C3279E43FD00BF8F15 /* Debug */,
+				6B4D63C4279E43FD00BF8F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B4D63C5279E43FD00BF8F15 /* Build configuration list for PBXNativeTarget "AircraftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4D63C6279E43FD00BF8F15 /* Debug */,
+				6B4D63C7279E43FD00BF8F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B4D63C8279E43FD00BF8F15 /* Build configuration list for PBXNativeTarget "AircraftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4D63C9279E43FD00BF8F15 /* Debug */,
+				6B4D63CA279E43FD00BF8F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6B4D63A7279E43FD00BF8F15 /* Aircraft.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B4D63A8279E43FD00BF8F15 /* Aircraft.xcdatamodel */,
+			);
+			currentVersion = 6B4D63A8279E43FD00BF8F15 /* Aircraft.xcdatamodel */;
+			path = Aircraft.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6B4D6391279E43FB00BF8F15 /* Project object */;
+}
